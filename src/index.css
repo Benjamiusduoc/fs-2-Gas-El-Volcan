@@ -58,7 +58,64 @@ a {
 .form-control:focus,
 .form-select:focus {
   border-color: #fb923c;
+  background-color: #fff;
   box-shadow: 0 0 0 0.2rem rgb(234 88 12 / 18%);
+}
+
+.form-control,
+.form-select {
+  min-height: 44px;
+  padding: 0.625rem 0.875rem;
+  color: #292524;
+  background-color: #fff7ed;
+  border-color: #fdba74;
+  border-radius: 0.65rem;
+}
+
+.form-control[type="checkbox"],
+.form-control[type="radio"] {
+  min-height: auto;
+  padding: 0;
+}
+
+textarea.form-control {
+  min-height: 120px;
+}
+
+.form-control::placeholder {
+  color: #64748b;
+  opacity: 1;
+}
+
+.form-control:disabled,
+.form-control[readonly],
+.form-select:disabled {
+  color: #475569;
+  background-color: #f1f5f9;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]),
+textarea,
+select {
+  color: #292524;
+  background-color: #fff7ed;
+  border-color: #fdba74;
+  border-radius: 0.65rem;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]):focus,
+textarea:focus,
+select:focus {
+  background-color: #fff;
+  border-color: #ea580c;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(234 88 12 / 18%);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #64748b;
+  opacity: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
