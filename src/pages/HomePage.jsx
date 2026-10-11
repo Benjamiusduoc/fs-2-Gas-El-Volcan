@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 import { getProductos } from '../data/mockDb';
 import { ProductGrid } from '../core/ProductGrid';
-import heroImage from '../assets/hero.png';
 
 export function HomePage() {
   const { addToCart } = useContext(CartContext);
@@ -20,8 +19,8 @@ export function HomePage() {
     <main className="container-fluid page-content flex-grow px-3 px-lg-5">
       <section className="home-hero my-4 my-lg-5 flex min-h-[380px] items-center justify-center overflow-hidden rounded-3xl bg-gray-900 text-center text-white shadow-2xl">
         <img
-          src={heroImage}
-          alt=""
+          src="https://images.unsplash.com/photo-1541845157-a6d2d100c931?auto=format&fit=crop&w=1800&q=85"
+          alt="Paisaje volcánico al atardecer"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="home-hero__overlay absolute inset-0" />
